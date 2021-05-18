@@ -25,7 +25,7 @@ function dashboardView(req, res) {
   const viewtemplate = {
     // themename,
     viewname: 'admin/dashboard',
-    extname: 'periodicjs.ext.admin',
+    extname: '@digifi/periodicjs.ext.admin',
     // fileext,
   };
   const viewdata = Object.assign({
@@ -38,7 +38,7 @@ function accountView(req, res) {
   const viewtemplate = {
     // themename,
     viewname: 'admin/account',
-    extname: 'periodicjs.ext.admin',
+    extname: '@digifi/periodicjs.ext.admin',
     // fileext,
   };
   const viewdata = {
@@ -66,7 +66,7 @@ function appSettingsView(req, res) {
   const viewtemplate = {
     // themename,
     viewname: 'admin/settings',
-    extname: 'periodicjs.ext.admin',
+    extname: '@digifi/periodicjs.ext.admin',
     // fileext,
   };
   const viewdata = Object.assign({
@@ -110,7 +110,7 @@ function fileView(req, res) {
   const viewtemplate = {
     // themename,
     viewname: 'files/index',
-    extname: 'periodicjs.ext.admin',
+    extname: '@digifi/periodicjs.ext.admin',
     // fileext,
   };
   const viewdata = Object.assign({

@@ -13,7 +13,7 @@ function extensionView(req, res) {
   const viewtemplate = {
     // themename,
     viewname: 'extension/index',
-    extname: 'periodicjs.ext.admin',
+    extname: '@digifi/periodicjs.ext.admin',
     // fileext,
   };
   const viewdata = Object.assign({

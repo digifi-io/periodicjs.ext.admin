@@ -61,7 +61,7 @@ function filterAdminExtensionMenus(ext) {
 }
 
 function getSettings() {
-  return periodic.settings.extensions['periodicjs.ext.admin'];
+  return periodic.settings.extensions['@digifi/periodicjs.ext.admin'];
 }
 
 module.exports = {

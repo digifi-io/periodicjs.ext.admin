@@ -289,7 +289,7 @@ var index = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/home/index',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -321,7 +321,7 @@ var settings_index = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/settings/index',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			// console.log('req.controllerData.themesettings',req.controllerData.themesettings);
@@ -355,7 +355,7 @@ var settings_faq = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/settings/faq',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -385,7 +385,7 @@ var mail_index = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/mailer/index',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -415,7 +415,7 @@ var items_index = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/items/index',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -450,7 +450,7 @@ var item_new = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/items/new',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			if (!err && !User.hasPrivilege(req.user, 110)) {
@@ -510,7 +510,7 @@ var item_edit = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/items/edit',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			getDefaultContentTypes('item_default_contenttypes', function (err, defaultcontenttypes) {
@@ -575,7 +575,7 @@ var item_review_revision = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/items/review_revision',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			if (!err && !User.hasPrivilege(req.user, 110)) {
@@ -618,7 +618,7 @@ var item_revisions = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/items/revisions',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			if (!err && !User.hasPrivilege(req.user, 110)) {
@@ -662,7 +662,7 @@ var collections_index = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/collections/index',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -694,7 +694,7 @@ var collection_new = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/collections/new',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			getDefaultContentTypes('collection_default_contenttypes', function (err, defaultcontenttypes) {
@@ -753,7 +753,7 @@ var collection_edit = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/collections/edit',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 
@@ -821,7 +821,7 @@ var collection_review_revision = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/collections/review_revision',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			if (!err && !User.hasPrivilege(req.user, 110)) {
@@ -864,7 +864,7 @@ var collection_revisions = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/collections/revisions',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			if (!err && !User.hasPrivilege(req.user, 110)) {
@@ -906,7 +906,7 @@ var compilations_index = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/compilations/index',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -938,7 +938,7 @@ var compilation_new = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/compilations/new',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			getDefaultContentTypes('compilation_default_contenttypes', function (err, defaultcontenttypes) {
@@ -984,7 +984,7 @@ var compilation_edit = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/compilations/edit',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			getDefaultContentTypes('compilation_default_contenttypes', function (err, defaultcontenttypes) {
@@ -1048,7 +1048,7 @@ var compilation_review_revision = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/compilations/review_revision',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			if (!err && !User.hasPrivilege(req.user, 110)) {
@@ -1091,7 +1091,7 @@ var compilation_revisions = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/compilations/revisions',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			if (!err && !User.hasPrivilege(req.user, 110)) {
@@ -1128,7 +1128,7 @@ var compilation_content_search_index = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/compilations/index',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			var content_entities = req.controllerData.items.concat(req.controllerData.collections);
@@ -1159,7 +1159,7 @@ var assets_index = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/assets/index',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -1192,7 +1192,7 @@ var asset_show = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/assets/show',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -1224,7 +1224,7 @@ var contenttypes_index = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/contenttypes/index',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -1257,7 +1257,7 @@ var contenttype_show = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/contenttypes/show',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -1291,7 +1291,7 @@ var tags_index = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/tags/index',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -1324,7 +1324,7 @@ var tag_show = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/tags/show',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -1358,7 +1358,7 @@ var tag_parent = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/tags/show_parent',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -1391,7 +1391,7 @@ var categories_index = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/categories/index',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -1424,7 +1424,7 @@ var category_show = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/categories/show',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -1458,7 +1458,7 @@ var category_parent = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/categories/show_parent',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -1555,7 +1555,7 @@ var extensions_index = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/extensions/index',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -1609,7 +1609,7 @@ var extension_show = function (req, res) {
 				CoreController.getPluginViewDefaultTemplate({
 						viewname: 'p-admin/extensions/show',
 						themefileext: appSettings.templatefileextension,
-						extname: 'periodicjs.ext.admin'
+						extname: '@digifi/periodicjs.ext.admin'
 					},
 					function (err, templatepath) {
 						CoreController.handleDocumentQueryRender({
@@ -1680,7 +1680,7 @@ var themes_index = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/themes/index',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -1736,7 +1736,7 @@ var theme_show = function (req, res) {
 				CoreController.getPluginViewDefaultTemplate({
 						viewname: 'p-admin/themes/show',
 						themefileext: appSettings.templatefileextension,
-						extname: 'periodicjs.ext.admin'
+						extname: '@digifi/periodicjs.ext.admin'
 					},
 					function (err, templatepath) {
 						CoreController.handleDocumentQueryRender({
@@ -1791,7 +1791,7 @@ var users_index = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/users/index',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -1842,7 +1842,7 @@ var users_show = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/users/show',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -1875,7 +1875,7 @@ var users_new = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/users/new',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
@@ -1926,7 +1926,7 @@ var users_edit = function (req, res) {
 	CoreController.getPluginViewDefaultTemplate({
 			viewname: 'p-admin/users/edit',
 			themefileext: appSettings.templatefileextension,
-			extname: 'periodicjs.ext.admin'
+			extname: '@digifi/periodicjs.ext.admin'
 		},
 		function (err, templatepath) {
 			CoreController.handleDocumentQueryRender({
