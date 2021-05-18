@@ -8,8 +8,8 @@ const adminSettings = utilities.getSettings();
 const extensionRouter = periodic.express.Router();
 const admin_route_prefix = adminSettings.routing.admin_prefix;
 const adminRoute = periodic.utilities.routing.route_prefix(admin_route_prefix);
-const passportControllers = periodic.controllers.extension.get('periodicjs.ext.passport');
-const uacControllers = periodic.controllers.extension.get('periodicjs.ext.user_access_control');
+const passportControllers = periodic.controllers.extension.get('@digifi/periodicjs.ext.passport');
+const uacControllers = periodic.controllers.extension.get('@digifi/periodicjs.ext.user_access_control');
 const preTransforms = periodic.utilities.middleware.preTransforms(periodic);
 //	adminRouter.all('*', global.CoreCache.disableCache, authController.ensureAuthenticated, uacController.loadUserRoles, uacController.check_user_access);
 

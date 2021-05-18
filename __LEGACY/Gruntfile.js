@@ -109,7 +109,7 @@ module.exports = function (grunt) {
 				cwd: 'public',
 				expand: true,
 				src: '**/*.*',
-				dest: '../../public/extensions/periodicjs.ext.admin',
+				dest: '../../public/extensions/@digifi/periodicjs.ext.admin',
 			},
 		},
 		watch: {

@@ -1,7 +1,7 @@
 {
-  "name": "periodicjs.ext.admin",
+  "name": "@digifi/periodicjs.ext.admin",
   "description": "Basic admin extension",
-  "version": "10.6.6",
+  "version": "10.7.0",
   "main": "index.js",
   "engines": {
     "node": "^6.x"
@@ -18,8 +18,8 @@
   "license": "MIT",
   "scripts": {
     "test": "mocha -R spec --recursive",
-    "postinstall": "cd ../../ && periodicjs aex periodicjs.ext.admin",
-    "postuninstall": "cd ../../ && periodicjs rex periodicjs.ext.admin"
+    "postinstall": "cd ../../ && periodicjs aex @digifi/periodicjs.ext.admin",
+    "postuninstall": "cd ../../ && periodicjs rex @digifi/periodicjs.ext.admin"
   },
   "dependencies": {},
   "devDependencies": {

@@ -2,11 +2,11 @@
   "periodic_compatibility": "10.6.4",
   "periodic_dependencies": [
     {
-    "extname": "periodicjs.ext.passport",
+    "extname": "@digifi/periodicjs.ext.passport",
     "version": "5.0.3"
   },
     {
-    "extname": "periodicjs.ext.user_access_control",
+    "extname": "@digifi/periodicjs.ext.user_access_control",
     "version": "9.0.3"
   }
 ],

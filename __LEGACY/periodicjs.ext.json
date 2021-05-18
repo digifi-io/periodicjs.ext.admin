@@ -10,7 +10,7 @@
         "extname": "periodicjs.ext.scheduled_content",
         "version":"~4.0.0"
     },{
-        "extname": "periodicjs.ext.user_access_control",
+        "extname": "@digifi/periodicjs.ext.user_access_control",
         "version":"~4.0.0"
   }]
 }
